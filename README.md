@@ -17,14 +17,16 @@
     - [Exploitation](#exploitation)
       - [Credential Attacks](#credential-attacks)
 - [Reading materials](#reading-materials)
+  - [AWS](#aws)
+  - [Azure](#azure)
+  - [GCP](#gcp)
+  - [Others](#others)
 - [Resources](#resources)
-  - [Articles](#articles)
-    - [Lists and Cheat Sheets](#lists-and-cheat-sheets)
+  - [Lists and Cheat Sheets](#lists-and-cheat-sheets)
   - [Lab Exercises](#lab-exercises)
   - [Talks & Videos](#talks-and-videos)
   - [Books](#books)
   - [Tips and Tricks](#tips-and-tricks)
-
 
 # Standards
 
@@ -177,43 +179,18 @@
 - [adconnectdump](https://github.com/fox-it/adconnectdump) - Dump Azure AD Connect credentials for Azure AD and Active Directory
 
 # Reading Materials
-- [AWS](#aws)
-- [Azure](#azure)
-- [GCP](#gcp)
-- [Others](#others)
 
 ## AWS
-1. [Overiew of AWS Security](https://aws.amazon.com/security/)
-2. [AWS-IAM-Privilege-Escalation by RhinoSecurityLabs](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation): A centralized source of all AWS IAM privilege escalation methods.
-3. [MITRE ATT&CK Matrices of AWS](https://attack.mitre.org/matrices/enterprise/cloud/aws/)
-4. [AWS security workshops](https://github.com/aws-samples/aws-security-workshops)
+- [Overiew of AWS Security](https://aws.amazon.com/security/)
+- [AWS-IAM-Privilege-Escalation by RhinoSecurityLabs](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation): A centralized source of all AWS IAM privilege escalation methods.
+- [MITRE ATT&CK Matrices of AWS](https://attack.mitre.org/matrices/enterprise/cloud/aws/)
+- [AWS security workshops](https://github.com/aws-samples/aws-security-workshops)
+- [Bucket search by grayhatwarfare](https://buckets.grayhatwarfare.com/)
 ## Azure
-1. [Overiew of Azure Security](https://azure.microsoft.com/en-us/overview/security/)
-2. [Azure security fundamentals](https://docs.microsoft.com/en-us/azure/security/fundamentals/)
-3. [MicroBurst by NetSPI](https://github.com/NetSPI/MicroBurst): A collection of scripts for assessing Microsoft Azure security
-4. [MITRE ATT&CK Matrices of Azure](https://attack.mitre.org/matrices/enterprise/cloud/azure/)
-## GCP
-1. [Overiew of GCP Security](https://cloud.google.com/security)
-2. [GKE security scenarios demo](https://github.com/GoogleCloudPlatform/gke-security-scenarios-demo)
-3. [MITRE ATT&CK Matrices of GCP](https://attack.mitre.org/matrices/enterprise/cloud/gcp/)
-## Others
-1. [Cloud Security Research by RhinoSecurityLabs](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) 
-2. [CSA cloud security guidance v4](https://cloudsecurityalliance.org/artifacts/security-guidance-v4/)
-3. [Appsecco provides training](https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training)
-
-# Resources
-- [AWS](#aws-1)
-- [Others](#others-1)
-## AWS
-1. [Bucket search by grayhatwarfare](https://buckets.grayhatwarfare.com/)
-
-## Others
-1. [Mapping of On-Premises Security Controls vs. Major Cloud Providers Services](https://www.eventid.net/docs/onprem_to_cloud.asp)
-
-## Resources
-
-### Articles
-
+- [Overiew of Azure Security](https://azure.microsoft.com/en-us/overview/security/)
+- [Azure security fundamentals](https://docs.microsoft.com/en-us/azure/security/fundamentals/)
+- [MicroBurst by NetSPI](https://github.com/NetSPI/MicroBurst): A collection of scripts for assessing Microsoft Azure security
+- [MITRE ATT&CK Matrices of Azure](https://attack.mitre.org/matrices/enterprise/cloud/azure/)
 - [Abusing Azure AD SSO with the Primary Refresh Token ](https://dirkjanm.io/abusing-azure-ad-sso-with-the-primary-refresh-token/)
 - [Abusing dynamic groups in Azure AD for Privilege Escalation](https://www.mnemonic.no/blog/abusing-dynamic-groups-in-azure/)
 - [Attacking Azure, Azure AD, and Introducing PowerZure](https://hausec.com/2020/01/31/attacking-azure-azure-ad-and-introducing-powerzure/)
@@ -230,8 +207,19 @@
 - [Moving laterally between Azure AD joined machines](https://medium.com/@talthemaor/moving-laterally-between-azure-ad-joined-machines-ed1f8871da56)
 - [CrowdStrike Launches Free Tool to Identify and Help Mitigate Risks in Azure Active Directory](https://www.crowdstrike.com/blog/crowdstrike-launches-free-tool-to-identify-and-help-mitigate-risks-in-azure-active-directory/)
 - [Privilege Escalation Vulnerability in Azure Functions](https://www.intezer.com/blog/cloud-security/royal-flush-privilege-escalation-vulnerability-in-azure-functions/)
+## GCP
+- [Overiew of GCP Security](https://cloud.google.com/security)
+- [GKE security scenarios demo](https://github.com/GoogleCloudPlatform/gke-security-scenarios-demo)
+- [MITRE ATT&CK Matrices of GCP](https://attack.mitre.org/matrices/enterprise/cloud/gcp/)
+## Others
+- [Cloud Security Research by RhinoSecurityLabs](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) 
+- [CSA cloud security guidance v4](https://cloudsecurityalliance.org/artifacts/security-guidance-v4/)
+- [Appsecco provides training](https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training)
+- [Mapping of On-Premises Security Controls vs. Major Cloud Providers Services](https://www.eventid.net/docs/onprem_to_cloud.asp)
 
-#### Lists and Cheat Sheets
+# Resources
+
+## Lists and Cheat Sheets
 
 - [Azure Articles from NetSPI](https://blog.netspi.com/?s=azure)
 - [Azure Cheat Sheet on CloudSecDocs](https://cloudsecdocs.com/azure/services/overview/)
@@ -239,13 +227,13 @@
 - [Resources from PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md)
 - [Encyclopedia on Hacking the Cloud](https://hackingthe.cloud/) - (_No content yet for Azure_)
 
-### Lab Exercises
+## Lab Exercises
 
 - [azure-security-lab](https://github.com/azurecitadel/azure-security-lab) - Securing Azure Infrastructure - Hands on Lab Guide
 - [AzureSecurityLabs](https://github.com/davisanc/AzureSecurityLabs) - Hands-on Security Labs focused on Azure IaaS Security
 - [Building Free Active Directory Lab in Azure](https://medium.com/@kamran.bilgrami/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 
-### Talks and Videos
+## Talks and Videos
 
 - [Attacking and Defending the Microsoft Cloud (Office 365 & Azure AD](https://www.youtube.com/watch?v=SG2ibjuzRJM)
   - [Presentation Slides](https://i.blackhat.com/USA-19/Wednesday/us-19-Metcalf-Attacking-And-Defending-The-Microsoft-Cloud.pdf)
@@ -257,11 +245,11 @@
   - [Presentation Slides](https://notpayloads.blob.core.windows.net/slides/Azure-PrivEsc-DerbyCon9.pdf)
 - [Introducing ROADtools - Azure AD exploration for Red Teams and Blue Teams](https://www.youtube.com/watch?v=o5QDt30Pw_o)
 
-### Books
+## Books
 
 - [Pentesting Azure Applications](https://nostarch.com/azure)
 
-### Tips and Tricks
+## Tips and Tricks
 
 - Replace COMPANYNAME with the company name of your choice to check if they use Azure. If the **NameSpaceType** indicates _"Managed"_, then the company is using Azure AD:
 ```
