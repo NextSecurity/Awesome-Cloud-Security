@@ -209,3 +209,61 @@
 
 ## Others
 1. [Mapping of On-Premises Security Controls vs. Major Cloud Providers Services](https://www.eventid.net/docs/onprem_to_cloud.asp)
+
+## Resources
+
+### Articles
+
+- [Abusing Azure AD SSO with the Primary Refresh Token ](https://dirkjanm.io/abusing-azure-ad-sso-with-the-primary-refresh-token/)
+- [Abusing dynamic groups in Azure AD for Privilege Escalation](https://www.mnemonic.no/blog/abusing-dynamic-groups-in-azure/)
+- [Attacking Azure, Azure AD, and Introducing PowerZure](https://hausec.com/2020/01/31/attacking-azure-azure-ad-and-introducing-powerzure/)
+- [Attacking Azure & Azure AD, Part II](https://posts.specterops.io/attacking-azure-azure-ad-part-ii-5f336f36697d)
+- [Azure AD Connect for Red Teamers](https://blog.xpnsec.com/azuread-connect-for-redteam/)
+- [Azure AD Introduction for Red Teamers](https://www.synacktiv.com/posts/pentest/azure-ad-introduction-for-red-teamers.html)
+- [Azure AD Pass The Certificate](https://medium.com/@mor2464/azure-ad-pass-the-certificate-d0c5de624597)
+- [Azure AD privilege escalation - Taking over default application permissions as Application Admin](https://dirkjanm.io/azure-ad-privilege-escalation-application-admin/)
+- [Defense and Detection for Attacks Within Azure](https://posts.specterops.io/detecting-attacks-within-azure-bdc40f8c0766)
+- [Hunting Azure Admins for Vertical Escalation](https://www.lares.com/blog/hunting-azure-admins-for-vertical-escalation/)
+- [Impersonating Office 365 Users With Mimikatz](https://www.dsinternals.com/en/impersonating-office-365-users-mimikatz/)
+- [Lateral Movement from Azure to On-Prem AD](https://posts.specterops.io/death-from-above-lateral-movement-from-azure-to-on-prem-ad-d18cb3959d4d)
+- [Malicious Azure AD Application Registrations](https://www.lares.com/blog/malicious-azure-ad-application-registrations/)
+- [Moving laterally between Azure AD joined machines](https://medium.com/@talthemaor/moving-laterally-between-azure-ad-joined-machines-ed1f8871da56)
+- [CrowdStrike Launches Free Tool to Identify and Help Mitigate Risks in Azure Active Directory](https://www.crowdstrike.com/blog/crowdstrike-launches-free-tool-to-identify-and-help-mitigate-risks-in-azure-active-directory/)
+- [Privilege Escalation Vulnerability in Azure Functions](https://www.intezer.com/blog/cloud-security/royal-flush-privilege-escalation-vulnerability-in-azure-functions/)
+
+#### Lists and Cheat Sheets
+
+- [Azure Articles from NetSPI](https://blog.netspi.com/?s=azure)
+- [Azure Cheat Sheet on CloudSecDocs](https://cloudsecdocs.com/azure/services/overview/)
+- [Resources about Azure from Cloudberry Engineering](https://cloudberry.engineering/tags/azure/)
+- [Resources from PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md)
+- [Encyclopedia on Hacking the Cloud](https://hackingthe.cloud/) - (_No content yet for Azure_)
+
+### Lab Exercises
+
+- [azure-security-lab](https://github.com/azurecitadel/azure-security-lab) - Securing Azure Infrastructure - Hands on Lab Guide
+- [AzureSecurityLabs](https://github.com/davisanc/AzureSecurityLabs) - Hands-on Security Labs focused on Azure IaaS Security
+- [Building Free Active Directory Lab in Azure](https://medium.com/@kamran.bilgrami/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
+
+### Talks and Videos
+
+- [Attacking and Defending the Microsoft Cloud (Office 365 & Azure AD](https://www.youtube.com/watch?v=SG2ibjuzRJM)
+  - [Presentation Slides](https://i.blackhat.com/USA-19/Wednesday/us-19-Metcalf-Attacking-And-Defending-The-Microsoft-Cloud.pdf)
+- [TR19: I'm in your cloud, reading everyone's emails - hacking Azure AD via Active Directory](https://www.youtube.com/watch?v=JEIR5oGCwdg)
+  - [Presentation Slides](https://troopers.de/downloads/troopers19/TROOPERS19_AD_Im_in_your_cloud.pdf)
+- [Dirk Jan Mollema - Im In Your Cloud Pwning Your Azure Environment - DEF CON 27 Conference](https://www.youtube.com/watch?v=xei8lAPitX8)
+  - [Presentation Slides](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Dirk-jan-Mollema-Im-in-your-cloud-pwning-your-azure-environment.pdf)
+- [Adventures in Azure Privilege Escalation Karl Fosaaen](https://www.youtube.com/watch?v=EYtw-XPml0w)
+  - [Presentation Slides](https://notpayloads.blob.core.windows.net/slides/Azure-PrivEsc-DerbyCon9.pdf)
+- [Introducing ROADtools - Azure AD exploration for Red Teams and Blue Teams](https://www.youtube.com/watch?v=o5QDt30Pw_o)
+
+### Books
+
+- [Pentesting Azure Applications](https://nostarch.com/azure)
+
+### Tips and Tricks
+
+- Replace COMPANYNAME with the company name of your choice to check if they use Azure. If the **NameSpaceType** indicates _"Managed"_, then the company is using Azure AD:
+```
+https://login.microsoftonline.com/getuserrealm.srf?login=username@COMPANYNAME.onmicrosoft.com&xml=1
+```
