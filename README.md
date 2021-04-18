@@ -3,14 +3,30 @@
 
 # Contents
 - [Standards](#standards)
+  - [Compliances](#compliances)
+  - [Benchmarks](#benchmarks)
 - [Tools](#tools)
+  - [Infrastrcture](#infrastrcture)
+  - [Container](#container)
+  - [SaaS](#saas)
+  - [Native tools](#nativetools)
+  - [Penetration Testing](#penetration-testing)
+    - [Enumeration](#enumeration)
+    - [Information Gathering](#information-gathering)
+    - [Lateral Movement](#lateral-movement)
+    - [Exploitation](#exploitation)
+      - [Credential Attacks](#credential-attacks)
 - [Reading materials](#reading-materials)
-- [Resource](#resource)
-- [Contributing](#contributing)
+- [Resources](#resources)
+  - [Articles](#articles)
+    - [Lists and Cheat Sheets](#lists-and-cheat-sheets)
+  - [Lab Exercises](#lab-exercises)
+  - [Talks & Videos](#talks-and-videos)
+  - [Books](#books)
+  - [Tips and Tricks](#tips-and-tricks)
+
 
 # Standards
-- [Compliances](#compliances)
-- [Benchmarks](#benchmarks)
 
 ## Compliances
 * [CSA STAR](https://cloudsecurityalliance.org/star/)
@@ -22,10 +38,6 @@
 * [CIS Benchmark](https://www.cisecurity.org/cis-benchmarks/)
 
 # Tools
-- [Infrastrcture](#infrastrcture)
-- [Container](#container)
-- [SaaS](#saas)
-- [Native tools](#nativetools)
 
 ## Infrastrcture
 * [aws_pwn](https://github.com/dagrz/aws_pwn): A collection of AWS penetration testing junk
@@ -124,6 +136,46 @@
   * [Event Threat Detection](https://cloud.google.com/event-threat-detection): Threat dection service.
   * [VPC Service Controls](https://cloud.google.com/vpc-service-controls): GCP service security perimeter control.
 
+## Penetration Testing
+
+### Enumeration
+
+- [o365creeper](https://github.com/LMGsec/o365creeper) - Enumerate valid email addresses
+- [CloudBrute](https://github.com/0xsha/CloudBrute) - Tool to find a cloud infrastructure of a company on top Cloud providers
+- [cloud_enum](https://github.com/initstring/cloud_enum) - Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud
+- [Azucar](https://github.com/nccgroup/azucar) - Security auditing tool for Azure environments
+- [CrowdStrike Reporting Tool for Azure (CRT)](https://github.com/CrowdStrike/CRT) - Query Azure AD/O365 tenants for hard to find permissions and configuration settings
+- [ScoutSuite](https://github.com/nccgroup/ScoutSuite) - Multi-cloud security auditing tool. Security posture assessment of different cloud environments.
+- [BlobHunter](https://github.com/cyberark/blobhunter) - A tool for scanning Azure blob storage accounts for publicly opened blobs
+- [Grayhat Warfare](https://buckets.grayhatwarfare.com/) - Open Azure blobs and AWS bucket search
+
+### Information Gathering
+
+- [o365recon](https://github.com/nyxgeek/o365recon) - Information gathering with valid credentials to Azure
+- [Get-MsolRolesAndMembers.ps1](https://gist.github.com/ciphertxt/2036e614edf4bf920796059017fbbc3d) - Retrieve list of roles and associated role members
+- [ROADtools](https://github.com/dirkjanm/ROADtools) - Framework to interact with Azure AD
+- [PowerZure](https://github.com/hausec/PowerZure) - PowerShell framework to assess Azure security
+- [Azurite](https://github.com/FSecureLABS/Azurite) - Enumeration and reconnaissance activities in the Microsoft Azure Cloud
+- [Sparrow.ps1](https://github.com/cisagov/Sparrow) - Helps to detect possible compromised accounts and applications in the Azure/M365 environment
+- [Hawk](https://github.com/T0pCyber/hawk) - Powershell based tool for gathering information related to O365 intrusions and potential breaches
+
+### Lateral Movement
+
+- [Stormspotter](https://github.com/Azure/Stormspotter) - Azure Red Team tool for graphing Azure and Azure Active Directory objects
+- [AzureADLateralMovement](https://github.com/talmaor/AzureADLateralMovement) - Lateral Movement graph for Azure Active Directory
+- [SkyArk](https://github.com/cyberark/SkyArk) - Discover, assess and secure the most privileged entities in Azure and AWS
+
+### Exploitation
+
+- [MicroBurst](https://github.com/NetSPI/MicroBurst) - A collection of scripts for assessing Microsoft Azure security
+- [azuread_decrypt_msol_v2.ps1](https://gist.github.com/xpn/f12b145dba16c2eebdd1c6829267b90c) - Decrypt Azure AD MSOL service account
+
+#### Credential Attacks
+
+- [MSOLSpray](https://github.com/dafthack/MSOLSpray) - A password spraying tool for Microsoft Online accounts (Azure/O365)
+- [MFASweep](https://github.com/dafthack/MFASweep) -  A tool for checking if MFA is enabled on multiple Microsoft Services Resources
+- [adconnectdump](https://github.com/fox-it/adconnectdump) - Dump Azure AD Connect credentials for Azure AD and Active Directory
+
 # Reading Materials
 - [AWS](#aws)
 - [Azure](#azure)
@@ -149,7 +201,7 @@
 2. [CSA cloud security guidance v4](https://cloudsecurityalliance.org/artifacts/security-guidance-v4/)
 3. [Appsecco provides training](https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training)
 
-# Resource
+# Resources
 - [AWS](#aws-1)
 - [Others](#others-1)
 ## AWS
